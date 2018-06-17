@@ -1,0 +1,8 @@
+<h1>Name: <%= @robot.name %></h1>
+<h2>Serial: <%= @robot.serial %></h2>
+<h2>Purpose: <%= @robot.purpose %></h2>
+<h2>Mfg Date: <%= @robot.manufacture_date %></h2>
+<h2>Friendly: <%= @robot.friendly %></h2>
+<h2>Color: <%= @robot.color %></h2>
+
+<%= link_to("Delete", "/robots/#{@robot.id}", method: 'delete') %>

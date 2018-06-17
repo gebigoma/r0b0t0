@@ -1,0 +1,8 @@
+<h1>R0b0t0</h1>
+
+<div id="robot-list">
+  <% for r in @robots %>
+    <div class = "robot"><%= link_to(r.name, "/robots/#{r.id}") %></div>
+  <% end %>
+
+</div>
